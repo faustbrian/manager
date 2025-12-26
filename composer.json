@@ -1,0 +1,61 @@
+{
+    "name": "cline/manager",
+    "description": "Abstract manager pattern for creating extensible service managers",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "manager",
+        "abstract",
+        "pattern",
+        "extensible"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@cline.sh"
+        }
+    ],
+    "require": {
+        "php": "^8.5.0"
+    },
+    "require-dev": {
+        "cline/coding-standard": "^1.5.7",
+        "orchestra/testbench": "^10.8",
+        "symfony/var-dumper": "^7.4.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Cline\\Manager\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/ecs check --fix",
+        "refactor": "rector",
+        "test": [
+            "@test:lint",
+            "@test:type-coverage",
+            "@test:unit",
+            "@test:types",
+            "@test:refactor"
+        ],
+        "test:lint": "vendor/bin/ecs check",
+        "test:refactor": "rector --dry-run",
+        "test:type-coverage": "pest --parallel --min=90 --type-coverage",
+        "test:types": "phpstan",
+        "test:unit": "pest --parallel --min=90 --coverage"
+    }
+}
