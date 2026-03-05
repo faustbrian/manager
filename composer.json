@@ -19,7 +19,7 @@
         "php": "^8.5.0"
     },
     "require-dev": {
-        "cline/coding-standard": "^2.0",
+        "cline/coding-standard": "^2.0.1",
         "orchestra/testbench": "^10.9",
         "symfony/var-dumper": "^7.4.6"
     },
