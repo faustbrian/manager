@@ -1,13 +1,15 @@
 ## Table of Contents
 
-1. Quickstart Guide (`cookbooks/quickstart.md`)
-2. AbstractManager Pattern (`cookbooks/abstract-manager.md`)
-3. ManagerInterface Pattern (`cookbooks/manager-interface.md`)
-4. ConnectorInterface Pattern (`cookbooks/connector-interface.md`)
-5. Overview (`docs/README.md`)
-6. Abstract Manager (`docs/abstract-manager.md`)
-7. Connector Interface (`docs/connector-interface.md`)
-8. Manager Interface (`docs/manager-interface.md`)
+1. [Quickstart Guide](#doc-cookbooks-quickstart) (`cookbooks/quickstart.md`)
+2. [AbstractManager Pattern](#doc-cookbooks-abstract-manager) (`cookbooks/abstract-manager.md`)
+3. [ManagerInterface Pattern](#doc-cookbooks-manager-interface) (`cookbooks/manager-interface.md`)
+4. [ConnectorInterface Pattern](#doc-cookbooks-connector-interface) (`cookbooks/connector-interface.md`)
+5. [Overview](#doc-docs-readme) (`docs/README.md`)
+6. [Abstract Manager](#doc-docs-abstract-manager) (`docs/abstract-manager.md`)
+7. [Connector Interface](#doc-docs-connector-interface) (`docs/connector-interface.md`)
+8. [Manager Interface](#doc-docs-manager-interface) (`docs/manager-interface.md`)
+<a id="doc-cookbooks-quickstart"></a>
+
 # Quickstart Guide: Complete Manager Implementation
 
 This guide shows a complete, production-ready implementation of the manager pattern for a cache service in a Laravel application.
@@ -777,6 +779,8 @@ This complete example demonstrates:
 
 The pattern provides a clean, extensible architecture for managing multiple cache connections with minimal boilerplate.
 
+<a id="doc-cookbooks-abstract-manager"></a>
+
 # AbstractManager Pattern
 
 The `AbstractManager` class provides a foundation for managing multiple connections with support for dynamic connection creation, extension registration, and configuration management.
@@ -1030,6 +1034,8 @@ See `tests/AbstractManagerTest.php` for comprehensive examples covering:
 - Magic method delegation
 - Error scenarios
 - Configuration validation
+
+<a id="doc-cookbooks-manager-interface"></a>
 
 # ManagerInterface Pattern
 
@@ -1436,6 +1442,8 @@ public function test_default_connection_behavior(): void
 }
 ```
 
+<a id="doc-cookbooks-connector-interface"></a>
+
 # ConnectorInterface Pattern
 
 The `ConnectorInterface` defines the contract for connector classes that establish connections based on configuration arrays.
@@ -1698,6 +1706,8 @@ Use inline connector methods when:
 6. **Keep connectors stateless** - Don't store connection instances
 7. **Use constructor injection** - For connector dependencies
 
+<a id="doc-docs-readme"></a>
+
 Manager provides an abstract pattern for managing multiple connections or drivers in PHP applications, commonly used for databases, caches, queues, and external services.
 
 ## Installation
@@ -1764,9 +1774,11 @@ $manager = new CacheManager($config);
 
 ## Next Steps
 
-- [Abstract Manager](./abstract-manager.md) - Implement your own manager
-- [Connector Interface](./connector-interface.md) - Create custom connectors
-- [Manager Interface](./manager-interface.md) - Manager API reference
+- [Abstract Manager](#doc-docs-abstract-manager) - Implement your own manager
+- [Connector Interface](#doc-docs-connector-interface) - Create custom connectors
+- [Manager Interface](#doc-docs-manager-interface) - Manager API reference
+
+<a id="doc-docs-abstract-manager"></a>
 
 Implementing the AbstractManager for custom connection management.
 
@@ -1903,6 +1915,8 @@ class DatabaseManager extends AbstractManager
     }
 }
 ```
+
+<a id="doc-docs-connector-interface"></a>
 
 Creating custom connectors for the Manager pattern.
 
@@ -2052,6 +2066,8 @@ $factory->register('memcached', fn($config) => (new MemcachedConnector())->conne
 
 $redis = $factory->make('redis', $config);
 ```
+
+<a id="doc-docs-manager-interface"></a>
 
 The Manager interface API reference.
 

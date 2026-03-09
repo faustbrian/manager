@@ -19,10 +19,10 @@ composer require cline/manager
 
 ## Documentation
 
-- **[Quickstart Guide](cookbooks/quickstart.md)** - Complete implementation example with Laravel
-- **[AbstractManager Pattern](cookbooks/abstract-manager.md)** - Core manager functionality and usage
-- **[ManagerInterface Pattern](cookbooks/manager-interface.md)** - Interface contract details
-- **[ConnectorInterface Pattern](cookbooks/connector-interface.md)** - Connector implementation guide
+- **[Quickstart Guide](DOCS.md#doc-cookbooks-quickstart)** - Complete implementation example with Laravel
+- **[AbstractManager Pattern](DOCS.md#doc-cookbooks-abstract-manager)** - Core manager functionality and usage
+- **[ManagerInterface Pattern](DOCS.md#doc-cookbooks-manager-interface)** - Interface contract details
+- **[ConnectorInterface Pattern](DOCS.md#doc-cookbooks-connector-interface)** - Connector implementation guide
 
 ## Change log
 
