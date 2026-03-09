@@ -1,13 +1,13 @@
 ## Table of Contents
 
-1. [Quickstart Guide](#doc-cookbooks-quickstart) (`cookbooks/quickstart.md`)
-2. [AbstractManager Pattern](#doc-cookbooks-abstract-manager) (`cookbooks/abstract-manager.md`)
-3. [ManagerInterface Pattern](#doc-cookbooks-manager-interface) (`cookbooks/manager-interface.md`)
-4. [ConnectorInterface Pattern](#doc-cookbooks-connector-interface) (`cookbooks/connector-interface.md`)
-5. [Overview](#doc-docs-readme) (`docs/README.md`)
-6. [Abstract Manager](#doc-docs-abstract-manager) (`docs/abstract-manager.md`)
-7. [Connector Interface](#doc-docs-connector-interface) (`docs/connector-interface.md`)
-8. [Manager Interface](#doc-docs-manager-interface) (`docs/manager-interface.md`)
+1. [Quickstart Guide](#doc-cookbooks-quickstart)
+2. [AbstractManager Pattern](#doc-cookbooks-abstract-manager)
+3. [ManagerInterface Pattern](#doc-cookbooks-manager-interface)
+4. [ConnectorInterface Pattern](#doc-cookbooks-connector-interface)
+5. [Overview](#doc-docs-readme)
+6. [Abstract Manager](#doc-docs-abstract-manager)
+7. [Connector Interface](#doc-docs-connector-interface)
+8. [Manager Interface](#doc-docs-manager-interface)
 <a id="doc-cookbooks-quickstart"></a>
 
 # Quickstart Guide: Complete Manager Implementation
